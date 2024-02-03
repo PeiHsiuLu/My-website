@@ -1,0 +1,54 @@
+*{
+    background-color: #E2C2DE;
+}
+
+.head{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+
+}
+.list{
+    margin-right: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    height: 50px;
+    order:2;
+    
+}
+
+.subtitle{
+    margin-left: 100px;
+    font-size: 48px;
+    order:1;
+}
+
+.list div{
+    font-size: 24px;
+    font-family: Arial;
+    margin-left: 20px;
+}
+
+.button-1{
+    order:1;
+
+}
+
+.button-2{
+    order:2;
+}
+
+.button-3{
+    order:3;
+}
+
+.button-4{
+    order:4;
+}
+
+.button-5{
+    order:5;
+}
+
