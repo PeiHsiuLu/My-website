@@ -23,8 +23,7 @@ html, body {
     flex-direction: row;
     justify-content:space-between;
 }
-.list{
-    color:white;
+.home-list{
     margin-top: 30px;
     margin-right: 100px;
     display: flex;
@@ -33,6 +32,11 @@ html, body {
     height: 50px;
 }
 
+.home-list button:hover {
+    color:#FFD306;/* 滑鼠接觸時的文字顏色 */
+}
+
+
 .subtitle{
     margin-top: 30px;
     margin-left: 100px;
@@ -40,13 +44,21 @@ html, body {
 }
 
 .subtitle a{
-    color:white
+    color:white;
 }
 
-.list div{
+.subtitle :hover{
+    color:#FFD306;
+}
+
+
+.home-list button{
+    background-color: transparent;
+    border:none;
     font-size: 24px;
     font-family: Arial;
     margin-left: 20px;
+    color:white;
 }
 
 .button-1{
@@ -86,6 +98,24 @@ html, body {
     border-radius: 50%;
     border: 4px solid #FF8EFF; 
     margin-bottom: 20px;
+}
+
+.more{
+    margin-top: 40px;
+    background-color: purple;
+    color:white;
+    height:50px;
+    width:100px;
+    font-size: 23px;
+    text-align: center;
+    float:right;
+    border-radius: 10px;
+    border: none;
+    font-family: Stencil;
+}
+
+.text button:hover{
+    background-color: #FF8EFF;
 }
 
 .text{
@@ -149,7 +179,6 @@ html, body {
 }
 
 .container-5{
-
     margin-top: 100px;
     display: flex;
     align-items: top;
@@ -168,7 +197,6 @@ html, body {
 }
 
 .container-6{
-
     margin-top: 100px;
     display: flex;
     align-items: top;
@@ -179,6 +207,7 @@ html, body {
     margin-top: 10px;
     
  }
+
  .container-6 p{
      margin-top: 10px;
      flex: 1; /* Allow the paragraph to grow and take remaining space */
@@ -186,16 +215,66 @@ html, body {
      font-family: 標楷體;
      text-align: justify; /* 將文字左右對齊 */
  }
+ 
+ .container-7 a{
+    text-decoration: none; /* 移除連結底線 */
+    color:blue;
+    font-size: 30px;
+ }
 
- .container-7{
-    display:flex;
-    justify-content: center;
-    margin-top: 100px;
-    font-family:Stencil;
-    font-size: 50px;
+ .container-7 a :hover{
+    text-decoration: none; /* 移除連結底線 */
+    border-bottom: 3px solid red; /* 添加底部邊框代替連結底線 */
+    color:red;
+    font-size: 30px;
+ }
+
+ .container-7 div {
+    font-size: 30px; /* 調整字體大小 */
+    display: flex;
+    flex-direction: row;
+}
+
+.ability-1{
+    flex:1;
+}
+
+.ability-2{
+    flex:1;
+}
+
+.ability-3{
+    flex:1;
+}
+
+.ability-4{
+    flex:1;
+}
+
+.ability-5{
+    flex:1;
+}
+
+.ability-6{
+    flex:1;
+}
+
+.ability-7{
+    flex:1;
+}
+
+.ability-8{
+    flex:1;
+}
+
+.ability-9{
+    flex:1;
 }
 
 .about-me div{
     margin-top: 80px;
     font-size: 40px;
 }
+
+
+
