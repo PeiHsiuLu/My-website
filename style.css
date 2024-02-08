@@ -32,6 +32,15 @@ html, body {
     height: 50px;
 }
 
+.home-list a{
+    color: white;
+    text-decoration: none;
+}
+
+.home-list a:hover {
+    color:#FFD306;/* 滑鼠接觸時的文字顏色 */
+}
+
 .home-list button:hover {
     color:#FFD306;/* 滑鼠接觸時的文字顏色 */
 }
@@ -112,6 +121,11 @@ html, body {
     border-radius: 10px;
     border: none;
     font-family: Stencil;
+}
+
+.more a{
+    color:white;
+    text-decoration: none;
 }
 
 .text button:hover{
@@ -215,19 +229,8 @@ html, body {
      font-family: 標楷體;
      text-align: justify; /* 將文字左右對齊 */
  }
- 
- .container-7 a{
-    text-decoration: none; /* 移除連結底線 */
-    color:blue;
-    font-size: 30px;
- }
 
- .container-7 a :hover{
-    text-decoration: none; /* 移除連結底線 */
-    border-bottom: 3px solid red; /* 添加底部邊框代替連結底線 */
-    color:red;
-    font-size: 30px;
- }
+
 
  .container-7 div {
     font-size: 30px; /* 調整字體大小 */
@@ -276,5 +279,157 @@ html, body {
     font-size: 40px;
 }
 
+.container-8{
+    display:flex;
+    flex-direction: row;
+    justify-content: center; /* 水平居中 */
+    margin-bottom: 100px;
+}
+
+.container-8  div {
+    text-align: center; /* 文本水平居中 */
+    flex-direction: column; /* 垂直布局 */
+    align-items: center; /* 子元素水平居中 */
+   
+}
+
+.container-8 img {
+    display: block; /* 让图片变为块级元素 */
+}
+
+.container-8-1{
+    display:flex;
+    flex-direction: column;
+    font-size: 24px;
+    flex:1;
+    margin-right: 30px;
+}
+
+.container-8-1 div{
+    margin-top: -5px;
+    text-align: start;
+    font-family: Calibri;
+    font-size: 30px;
+}
+
+.container-8-2{
+    display:flex;
+    flex-direction: column;
+    font-size: 24px;
+    flex:1;
+    margin-right: 30px;
+}
+
+.container-8-2 div{
+    margin-top: -5px;
+    text-align: start;
+    font-family: Calibri;
+    font-size: 30px;
+}
+
+.container-8-3{
+    display:flex;
+    flex-direction: column;
+    font-size: 24px;
+    flex:1;
+    margin-right: 30px;
+}
+
+.container-8-3 div{
+    margin-top: -5px;
+    text-align: start;
+    font-family: Calibri;
+    font-size: 30px;
+}
+
+.container-9{
+    background-color: purple;
+    display:flex;
+    flex-direction: row;
+    color:white;
+    
+}
+
+.container-9-1{
+    flex:3;
+    text-align: center;
+    margin: auto; /* 水平居中 */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container-9-2{
+    flex:2;
+    display:flex;
+    flex-direction: column; 
+    text-align: start;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+}
+
+.container-9-2 button{
+    background-color: transparent;
+    border:none;
+    font-size: 24px;
+    color:white;
+    text-align: start;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container-9-2 a{
+    color:white;
+}
+
+.container-9-2 a:hover{
+    color:#FFD306;
+}
+
+.container-9-3{
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    text-align: start;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container-9-3 button{
+    background-color: transparent;
+    border:none;
+    font-size: 24px;
+    color:white;
+    text-align: start;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container-9-3 a{
+    color:white;
+}
+
+.container-9-3 a:hover{
+    color:#FFD306;
+}
+
+.container-9-4{
+    flex:1.5;
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.container-9-4 button{
+    background-color:transparent;
+    border:none;
+    font-size: 30px;
+    color:white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    min-height:50px;
+    min-width:150px;
+}
+
+.container-9-4 button:hover{
+    color:#FFD306;
+}
 
 
