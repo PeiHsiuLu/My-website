@@ -1,5 +1,5 @@
 /*字體類別*/
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @media screen and (max-width: 768px) {
     .home-list button{ 
         font-family: Arial, Helvetica, sans-serif;
