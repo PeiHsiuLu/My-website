@@ -54,10 +54,6 @@ html, body {
     font-size: 20px;
 }
 
-.subtitle a {
-    color: white;
-}
-
 .subtitle a:hover {
     color: #FFD306;
 }
@@ -329,5 +325,24 @@ html, body {
     .container-2 {
         margin-left: 20px;
         margin-right: 20px;
+    }
+    
+    .main,
+    .home,
+    .container,
+    .subtitle,
+    .me,
+    .more,
+    .text,
+    .about-me,
+    .container-3,
+    .container-4,
+    .container-5,
+    .container-6,
+    .container-7,
+    .container-8,
+    .container-9 {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
