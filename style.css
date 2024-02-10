@@ -197,22 +197,28 @@ html, body {
 
 .container-5 img{
     
-        margin-left: 2vw; /* 使用vw作为边距单位 */
-        width: 10vw; /* 使用vw作为宽度单位 */
+    margin-left: 2vw; /* 使用vw作为边距单位 */
     
 }
 
 .container-4 img,
 .container-6 img {
     margin-right: 2vw; /* 使用vw作为边距单位 */
-    width: 10vw; /* 使用vw作为宽度单位 */
+ 
+}
+
+.container-4 img,
+.container-5 img,
+.container-6 img{
+    width:50%;
+    height:50%
 }
 
 .container-4 p,
 .container-5 p,
 .container-6 p {
     flex: 1;
-    font-size: 3.6vw; /* 使用vw作为字体大小单位 */
+    font-size: 2vw; /* 使用vw作为字体大小单位 */
     font-family:'Times New Roman', Times, serif;
     margin-top: 1vw; /* 使用vw作为边距单位 */
     text-align: justify;
