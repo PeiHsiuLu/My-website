@@ -1,5 +1,10 @@
 /*字體類別*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face {
+    font-family: 'MyCustomFont'; /* 自定义字体名称 */
+    src: url('path/to/font.woff2') format('woff2'), /* 字体文件路径和格式 */
+         url('path/to/font.woff') format('woff'); /* 支持不同格式的字体文件 */
+  }
 @media screen and (max-width: 768px) {
     .home-list button{ 
         font-family: Arial, Helvetica, sans-serif;
@@ -223,6 +228,7 @@ html, body {
         width: 100%; /* 保证容器宽度占满整个视口 */
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     /* 导航栏容器 */
@@ -255,6 +261,18 @@ html, body {
         border: 0.2vw solid #FF8EFF; /* 减小边框宽度 */
         width: 80%; /* 使用百分比作为宽度单位 */
         height: auto; /* 根据宽度自动调整高度 */
+    }
+
+    .me {
+        display: flex;
+        justify-content: center; /* 在父容器中水平居中 */
+        align-items: center; /* 在父容器中垂直居中 */
+        text-align: center; /* 文本水平居中 */
+    }
+
+    .me img {
+        max-width: 100%; /* 图片最大宽度为父容器的100% */
+        height: auto; /* 根据宽度等比例调整高度 */
     }
 
     /* “更多”按钮样式 */
