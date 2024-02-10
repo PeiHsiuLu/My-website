@@ -1,456 +1,329 @@
+/* 全局样式 */
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
 }
 
-.main{
+/* 主要容器 */
+.main {
     background-color: #E2C2DE;
-    min-height: 100%; /* 確保 .main 高度至少與視窗高度一致 */
+    min-height: 100%;
 }
-.home{
-    min-height: 100%; /* 確保 .home 高度至少與視窗高度一致 */
+
+/* 主页样式 */
+.home {
+    min-height: 100%;
     display: flex;
     flex-direction: column;
 }
 
-
-
-.container{
+/* 导航栏容器 */
+.container {
     background-color: purple;
     margin-bottom: 50px;
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
 }
-.home-list{
+
+/* 导航栏列表 */
+.home-list {
     margin-top: 30px;
     margin-right: 100px;
     display: flex;
     flex-direction: row;
-    justify-content:flex-end;
+    justify-content: flex-end;
     height: 50px;
 }
 
-.home-list a{
+.home-list a {
     color: white;
     text-decoration: none;
 }
 
-.home-list a:hover {
-    color:#FFD306;/* 滑鼠接觸時的文字顏色 */
-}
-
+.home-list a:hover,
 .home-list button:hover {
-    color:#FFD306;/* 滑鼠接觸時的文字顏色 */
+    color: #FFD306;
 }
 
-
-.subtitle{
+/* 标题样式 */
+.subtitle {
     margin-top: 30px;
     margin-left: 100px;
     font-size: 20px;
 }
 
-.subtitle a{
-    color:white;
+.subtitle a:hover {
+    color: #FFD306;
 }
 
-.subtitle :hover{
-    color:#FFD306;
-}
-
-
-.home-list button{
+/* 导航按钮样式 */
+.home-list button {
     background-color: transparent;
-    border:none;
+    border: none;
     font-size: 24px;
     font-family: Arial;
     margin-left: 20px;
-    color:white;
+    color: white;
 }
 
-.button-1{
-    order:1;
+/* 用于控制按钮顺序的类 */
+.button-1 { order: 1; }
+.button-2 { order: 2; }
+.button-3 { order: 3; }
+.button-4 { order: 4; }
+.button-5 { order: 5; }
 
-}
-
-.button-2{
-    order:2;
-}
-
-.button-3{
-    order:3;
-}
-
-.button-4{
-    order:4;
-}
-
-.button-5{
-    order:5;
-}
-
-.container-2{
+/* 主内容容器 */
+.container-2 {
     margin-left: 100px;
     margin-right: 100px;
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
-.me{
-   float:left;
+/* 个人信息样式 */
+.me {
+    float: left;
 }
 
-.me img{
+.me img {
     border-radius: 50%;
-    border: 4px solid #FF8EFF; 
+    border: 4px solid #FF8EFF;
     margin-bottom: 20px;
 }
 
-.more{
+/* “更多”按钮样式 */
+.more {
     margin-top: 40px;
     background-color: purple;
-    color:white;
-    height:50px;
-    width:100px;
+    color: white;
+    height: 50px;
+    width: 100px;
     font-size: 23px;
     text-align: center;
-    float:right;
+    float: right;
     border-radius: 10px;
     border: none;
     font-family: Stencil;
 }
 
-.more a{
-    color:white;
+.more a {
+    color: white;
     text-decoration: none;
 }
 
-.text button:hover{
+.text button:hover {
     background-color: #FF8EFF;
 }
 
-.text{
+.text {
     margin-top: 0px;
 }
 
-.text p{
+.text p {
     font-size: 50px;
-    font-family:Stencil;
+    font-family: Stencil;
     margin-bottom: 70px;
 }
 
-.text div i{
+.text div i {
     font-size: 70px;
-    font-family:Stencil;
+    font-family: Stencil;
 }
 
-.text div{
+.text div {
     margin-top: 50px;
     font-size: 24px;
     font-family: Arial;
 }
 
-.main-2{
+/* 第二个主要容器 */
+.main-2 {
     background-color: azure;
     min-height: 100%;
 }
 
-.about-me{
-        margin-left: 100px;
-        margin-right: 100px;
-        min-height: 100%; /* 確保 .home 高度至少與視窗高度一致 */
-        display: flex;
-        flex-direction: column;
+/* 关于我的容器 */
+.about-me {
+    margin-left: 100px;
+    margin-right: 100px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-.container-3{
-    display:flex;
+/* 关于我的标题 */
+.container-3 {
+    display: flex;
     justify-content: center;
     margin-top: 100px;
-    font-family:Stencil;
+    font-family: Stencil;
 }
 
-
-.container-4{
+/* 关于我的内容容器 */
+.container-4,
+.container-5,
+.container-6 {
     margin-top: 100px;
     display: flex;
+    flex-direction: row;
     align-items: top;
 }
 
-.container-4 img{
-   margin-right: 50px;
-   
+.container-4 img,
+.container-5 img,
+.container-6 img {
+    margin-right: 50px;
 }
-.container-4 p{
-    margin-top: 10px;
-    flex: 1; /* Allow the paragraph to grow and take remaining space */
+
+.container-4 p,
+.container-5 p,
+.container-6 p {
+    flex: 1;
     font-size: 36px;
     font-family: 標楷體;
-    text-align: justify; /* 將文字左右對齊 */
-}
-
-.container-5{
-    margin-top: 100px;
-    display: flex;
-    align-items: top;
-}
-
-.container-5 img{
-    margin-top: 30px;
-}
-
-.container-5 p{
-    flex: 1; /* Allow the paragraph to grow and take remaining space */
-    font-size: 36px;
-    font-family: 標楷體;
-    margin-right: 50px;
-    text-align: justify; /* 將文字左右對齊 */
-}
-
-.container-6{
-    margin-top: 100px;
-    display: flex;
-    align-items: top;
-}
-
-.container-6 img{
-    margin-right: 50px;
     margin-top: 10px;
-    
- }
+    text-align: justify;
+}
 
- .container-6 p{
-     margin-top: 10px;
-     flex: 1; /* Allow the paragraph to grow and take remaining space */
-     font-size: 34px;
-     font-family: 標楷體;
-     text-align: justify; /* 將文字左右對齊 */
- }
-
-
-
- .container-7 div {
-    font-size: 30px; /* 調整字體大小 */
+/* 技能容器 */
+.container-7 div {
+    font-size: 30px;
     display: flex;
     flex-direction: row;
 }
 
-.ability-1{
-    flex:1;
+.ability-1,
+.ability-2,
+.ability-3,
+.ability-4,
+.ability-5,
+.ability-6,
+.ability-7,
+.ability-8,
+.ability-9 {
+    flex: 1;
 }
 
-.ability-2{
-    flex:1;
-}
-
-.ability-3{
-    flex:1;
-}
-
-.ability-4{
-    flex:1;
-}
-
-.ability-5{
-    flex:1;
-}
-
-.ability-6{
-    flex:1;
-}
-
-.ability-7{
-    flex:1;
-}
-
-.ability-8{
-    flex:1;
-}
-
-.ability-9{
-    flex:1;
-}
-
-.about-me div{
+/* 个人特质样式 */
+.about-me div {
     margin-top: 80px;
     font-size: 40px;
 }
 
-.container-8{
-    display:flex;
+/* 第八个容器 */
+.container-8 {
+    display: flex;
     flex-direction: row;
-    justify-content: center; /* 水平居中 */
+    justify-content: center;
     margin-bottom: 100px;
 }
 
-.container-8  div {
-    text-align: center; /* 文本水平居中 */
-    flex-direction: column; /* 垂直布局 */
-    align-items: center; /* 子元素水平居中 */
-   
+.container-8 div {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container-8 img {
-    display: block; /* 让图片变为块级元素 */
+    display: block;
 }
 
-.container-8-1{
-    display:flex;
+.container-8-1,
+.container-8-2,
+.container-8-3 {
+    display: flex;
     flex-direction: column;
     font-size: 24px;
-    flex:1;
+    flex: 1;
     margin-right: 30px;
 }
 
-.container-8-1 div{
+.container-8-1 div,
+.container-8-2 div,
+.container-8-3 div {
     margin-top: -5px;
     text-align: start;
     font-family: Calibri;
     font-size: 30px;
 }
 
-.container-8-2{
-    display:flex;
-    flex-direction: column;
-    font-size: 24px;
-    flex:1;
-    margin-right: 30px;
-}
-
-.container-8-2 div{
-    margin-top: -5px;
-    text-align: start;
-    font-family: Calibri;
-    font-size: 30px;
-}
-
-.container-8-3{
-    display:flex;
-    flex-direction: column;
-    font-size: 24px;
-    flex:1;
-    margin-right: 30px;
-}
-
-.container-8-3 div{
-    margin-top: -5px;
-    text-align: start;
-    font-family: Calibri;
-    font-size: 30px;
-}
-
-.container-9{
+/* 最后一个容器 */
+.container-9 {
     background-color: purple;
-    display:flex;
+    display: flex;
     flex-direction: row;
-    color:white;
-    
+    color: white;
 }
 
-.container-9-1{
-    flex:3;
+.container-9-1 {
+    flex: 3;
     text-align: center;
-    margin: auto; /* 水平居中 */
+    margin: auto;
     font-family: 'Times New Roman', Times, serif;
 }
 
-.container-9-2{
-    flex:2;
-    display:flex;
-    flex-direction: column; 
+.container-9-2,
+.container-9-3 {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
     text-align: start;
     font-family: 'Times New Roman', Times, serif;
     margin-bottom: 20px;
 }
 
-.container-9-2 button{
+.container-9-2 button,
+.container-9-3 button {
     background-color: transparent;
-    border:none;
+    border: none;
     font-size: 24px;
-    color:white;
+    color: white;
     text-align: start;
     font-family: 'Times New Roman', Times, serif;
 }
 
-.container-9-2 a{
-    color:white;
+.container-9-2 a,
+.container-9-3 a {
+    color: white;
 }
 
-.container-9-2 a:hover{
-    color:#FFD306;
+.container-9-2 a:hover,
+.container-9-3 a:hover {
+    color: #FFD306;
 }
 
-.container-9-3{
-    flex:1;
-    display:flex;
-    flex-direction: column;
-    text-align: start;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.container-9-3 button{
-    background-color: transparent;
-    border:none;
-    font-size: 24px;
-    color:white;
-    text-align: start;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.container-9-3 a{
-    color:white;
-}
-
-.container-9-3 a:hover{
-    color:#FFD306;
-}
-
-.container-9-4{
-    flex:1.5;
-    display:flex;
+.container-9-4 {
+    flex: 1.5;
+    display: flex;
     flex-direction: column;
     justify-content: end;
 }
 
-.container-9-4 button{
-    background-color:transparent;
-    border:none;
+.container-9-4 button {
+    background-color: transparent;
+    border: none;
     font-size: 30px;
-    color:white;
+    color: white;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     margin-bottom: 10px;
     margin-right: 10px;
-    min-height:50px;
-    min-width:150px;
+    min-height: 50px;
+    min-width: 150px;
 }
 
-.container-9-4 button:hover{
-    color:#FFD306;
+.container-9-4 button:hover {
+    color: #FFD306;
 }
 
-/* 在較小的屏幕上，容器堆疊在一起，圖片寬度自動調整 */
-@media only screen and (max-width: 600px) {
+/* 响应式设计 */
+@media screen and (max-width: 768px) {
     .container-2 {
-        flex-direction: column;
-        margin-left: 20px; /* 為了更好的可讀性，添加左邊距 */
-        margin-right: 20px; /* 為了更好的可讀性，添加右邊距 */
-    }
-    .me img {
-        width: 100%; /* 圖片寬度佔滿容器寬度 */
-        height: auto; /* 保持圖片比例 */
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
-
-/* 適用於所有手機屏幕 */
-@media only screen and (max-device-width: 480px) {
-    .container-2 {
-        margin-left: 10px; /* 更小的螢幕上進一步減少左邊距 */
-        margin-right: 10px; /* 更小的螢幕上進一步減少右邊距 */
-    }
-}
-
-
