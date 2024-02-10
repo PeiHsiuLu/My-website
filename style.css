@@ -54,6 +54,10 @@ html, body {
     font-size: 20px;
 }
 
+.subtitle a {
+    color: white;
+}
+
 .subtitle a:hover {
     color: #FFD306;
 }
