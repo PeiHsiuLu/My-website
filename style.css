@@ -75,7 +75,7 @@ html, body {
     background-color: transparent;
     border: none;
     font-size: 2vw; /* 使用vw作为字体大小单位 */
-    font-family: Arial;
+    font-family: Arial, Helvetica, sans-serif;
     margin-left: 1vw; /* 使用vw作为边距单位 */
     color: white;
 }
@@ -170,8 +170,8 @@ html, body {
 
 /* 关于我的容器 */
 .about-me {
-    margin-left: 2vw; /* 使用vw作为边距单位 */
-    margin-right: 2vw; /* 使用vw作为边距单位 */
+    margin-left: 5vw; /* 使用vw作为边距单位 */
+    margin-right: 5vw; /* 使用vw作为边距单位 */
     min-height: 100%;
     display: flex;
     flex-direction: column;
@@ -182,7 +182,7 @@ html, body {
     display: flex;
     justify-content: center;
     margin-top: 5vw; /* 使用vw作为边距单位 */
-    font-family: Stencil;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* 关于我的内容容器 */
@@ -195,8 +195,14 @@ html, body {
     align-items: top;
 }
 
+.container-5 img{
+    
+        margin-left: 2vw; /* 使用vw作为边距单位 */
+        width: 10vw; /* 使用vw作为宽度单位 */
+    
+}
+
 .container-4 img,
-.container-5 img,
 .container-6 img {
     margin-right: 2vw; /* 使用vw作为边距单位 */
     width: 10vw; /* 使用vw作为宽度单位 */
@@ -207,7 +213,7 @@ html, body {
 .container-6 p {
     flex: 1;
     font-size: 3.6vw; /* 使用vw作为字体大小单位 */
-    font-family: 標楷體;
+    font-family:'Times New Roman', Times, serif;
     margin-top: 1vw; /* 使用vw作为边距单位 */
     text-align: justify;
 }
@@ -234,7 +240,8 @@ html, body {
 /* 个人特质样式 */
 .about-me div {
     margin-top: 4vw; /* 使用vw作为边距单位 */
-    font-size: 4vw; /* 使用vw作为字体大小单位 */
+    font-size: 3vw; /* 使用vw作为字体大小单位 */
+    margin-bottom: 4vw;
 }
 
 /* 第八个容器 */
@@ -342,4 +349,359 @@ html, body {
 
 .container-9-4 button:hover {
     color: #FFD306;
+}
+
+@media screen and (max-width: 768px){
+    /* 全局样式 */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 1vw; /* 使用vw作为基准字体大小 */
+}
+
+/* 主要容器 */
+.main {
+    background-color: #E2C2DE;
+    width: 100%; /* 保证容器宽度占满整个视口 */
+    display: flex;
+    flex-direction: column;
+}
+
+/* 主页样式 */
+.home {
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 导航栏容器 */
+.container {
+    background-color: purple;
+    margin-bottom: 1vw; /* 使用vw作为边距单位 */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* 导航栏列表 */
+.home-list {
+    margin-top: 0.5vw; /* 使用vw作为边距单位 */
+    margin-right: 2vw; /* 使用vw作为边距单位 */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 5vw; /* 使用vw作为高度单位 */
+}
+
+.home-list a {
+    color: white;
+    text-decoration: none;
+}
+
+.home-list a:hover,
+.home-list button:hover {
+    color: #FFD306;
+}
+
+/* 标题样式 */
+.subtitle {
+    margin-top: 0.5vw; /* 使用vw作为边距单位 */
+    margin-left: 2vw; /* 使用vw作为边距单位 */
+    font-size: 2vw; /* 使用vw作为字体大小单位 */
+}
+
+.subtitle a:hover {
+    color: #FFD306;
+}
+
+
+
+
+.subtitle a {
+    color: white;
+}
+
+/* 导航按钮样式 */
+.home-list button {
+    background-color: transparent;
+    border: none;
+    font-size: 2vw; /* 使用vw作为字体大小单位 */
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 1vw; /* 使用vw作为边距单位 */
+    color: white;
+}
+
+/* 用于控制按钮顺序的类 */
+.button-1 { order: 1; }
+.button-2 { order: 2; }
+.button-3 { order: 3; }
+.button-4 { order: 4; }
+.button-5 { order: 5; }
+
+/* 主内容容器 */
+.container-2 {
+    margin-left: 2vw; /* 使用vw作为边距单位 */
+    margin-right: 2vw; /* 使用vw作为边距单位 */
+    display: flex;
+    flex-direction: row; /* 更改为列布局，以便控制 .me 和 .text 的顺序 */
+    align-items: center;
+}
+
+/* 个人信息样式 */
+.me {
+    width: 100%; /* 使用vw作为宽度单位 */
+    max-width: 100%; /* 图片宽度最大不超过其父容器宽度 */
+    margin-bottom: 0.5vw; /* 使用vw作为边距单位 */
+    justify-content: center;
+    flex:1;
+}
+
+.me img {
+    border-radius: 50%;
+    border: 0.4vw solid #FF8EFF; /* 使用vw作为边框宽度单位 */
+    word-wrap: break-word;
+    width: 70%; /* 将图片宽度设为80% */
+    height: 70%; /* 让高度根据宽度自动调整 */
+}
+
+
+/* “更多”按钮样式 */
+.more {
+    margin-top: 2vw; /* 使用vw作为边距单位 */
+    background-color: purple;
+    color: white;
+    height: 4vw; /* 使用vw作为高度单位 */
+    width: 7vw; /* 使用vw作为宽度单位 */
+    font-size: 2vw; /* 使用vw作为字体大小单位 */
+    text-align: center;
+    border-radius: 1vw; /* 使用vw作为边框半径单位 */
+    border: none;
+    font-family: Stencil;
+    margin-bottom: 5vw;
+}
+
+.more a {
+    color: white;
+    text-decoration: none;
+}
+
+.text button:hover {
+    background-color: #FF8EFF;
+}
+
+.text {
+    margin-top: 0;
+    flex-wrap:wrap ;
+    flex: 2;
+}
+
+.text p {
+    font-size: 3vw; /* 使用vw作为字体大小单位 */
+    font-family: Stencil;
+    margin-bottom: 1vw; /* 使用vw作为边距单位 */
+}
+
+.text div i {
+    font-size: 3vw; /* 使用vw作为字体大小单位 */
+    font-family: Stencil;
+}
+
+.text div {
+    margin-top: 3vw; /* 使用vw作为边距单位 */
+    font-size: 2vw; /* 使用vw作为字体大小单位 */
+    font-family: Arial;
+}
+
+/* 第二个主要容器 */
+.main-2 {
+    background-color: azure;
+    min-height: 100%;
+    width: 100%;
+}
+
+/* 关于我的容器 */
+.about-me {
+    margin-left: 5vw; /* 使用vw作为边距单位 */
+    margin-right: 5vw; /* 使用vw作为边距单位 */
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 关于我的标题 */
+.container-3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vw; /* 使用vw作为边距单位 */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* 关于我的内容容器 */
+.container-4,
+.container-5,
+.container-6 {
+    margin-top: 5vw; /* 使用vw作为边距单位 */
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+}
+
+.container-5 img{
+    
+        margin-left: 2vw; /* 使用vw作为边距单位 */
+        width: 10vw; /* 使用vw作为宽度单位 */
+    
+}
+
+.container-4 img,
+.container-6 img {
+    margin-right: 2vw; /* 使用vw作为边距单位 */
+    width: 10vw; /* 使用vw作为宽度单位 */
+}
+
+.container-4 p,
+.container-5 p,
+.container-6 p {
+    flex: 1;
+    font-size: 3.6vw; /* 使用vw作为字体大小单位 */
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 1vw; /* 使用vw作为边距单位 */
+    text-align: justify;
+}
+
+/* 技能容器 */
+.container-7 div {
+    font-size: 3vw; /* 使用vw作为字体大小单位 */
+    display: flex;
+    flex-direction: row;
+}
+
+.ability-1,
+.ability-2,
+.ability-3,
+.ability-4,
+.ability-5,
+.ability-6,
+.ability-7,
+.ability-8,
+.ability-9 {
+    flex: 1;
+}
+
+/* 个人特质样式 */
+.about-me div {
+    margin-top: 4vw; /* 使用vw作为边距单位 */
+    font-size: 3vw; /* 使用vw作为字体大小单位 */
+    margin-bottom: 4vw;
+}
+
+/* 第八个容器 */
+.container-8 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10vw; /* 使用vw作为边距单位 */
+}
+
+.container-8 div {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-8 img {
+    display: block;
+    width: 30vw; /* 使用vw作为宽度单位 */
+}
+
+.container-8-1,
+.container-8-2,
+.container-8-3 {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.4vw; /* 使用vw作为字体大小单位 */
+    flex: 1;
+    margin-right: 2vw; /* 使用vw作为边距单位 */
+}
+
+.container-8-1 div,
+.container-8-2 div,
+.container-8-3 div {
+    margin-top: -0.5vw; /* 使用vw作为边距单位 */
+    text-align: start;
+    font-family: Calibri;
+    font-size: 3vw; /* 使用vw作为字体大小单位 */
+}
+
+/* 最后一个容器 */
+.container-9 {
+    background-color: purple;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.container-9-1 {
+    flex: 3;
+    text-align: center;
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container-9-2,
+.container-9-3 {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 2vw; /* 使用vw作为边距单位 */
+}
+
+.container-9-2 button,
+.container-9-3 button {
+    background-color: transparent;
+    border: none;
+    font-size: 2.5vw; /* 使用vw作为字体大小单位 */
+    color: white;
+    text-align: start;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container-9-2 a,
+.container-9-3 a {
+    color: white;
+}
+
+.container-9-2 a:hover,
+.container-9-3 a:hover {
+    color: #FFD306;
+}
+
+.container-9-4 {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.container-9-4 button {
+    background-color: transparent;
+    border: none;
+    font-size: 3vw; /* 使用vw作为字体大小单位 */
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 2vw; /* 使用vw作为边距单位 */
+    margin-right: 2vw; /* 使用vw作为边距单位 */
+    min-height: 5vw; /* 使用vw作为最小高度单位 */
+    min-width: 15vw; /* 使用vw作为最小宽度单位 */
+}
+
+.container-9-4 button:hover {
+    color: #FFD306;
+}
 }
