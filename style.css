@@ -3,17 +3,22 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    width: 100%;
+    font-size: 1vw; /* 使用vw作为基准字体大小 */
 }
 
 /* 主要容器 */
 .main {
     background-color: #E2C2DE;
-    min-height: 100%;
+    width: 100%; /* 保证容器宽度占满整个视口 */
+    display: flex;
+    flex-direction: column;
 }
 
 /* 主页样式 */
 .home {
     min-height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -21,7 +26,7 @@ html, body {
 /* 导航栏容器 */
 .container {
     background-color: purple;
-    margin-bottom: 50px;
+    margin-bottom: 1vw; /* 使用vw作为边距单位 */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -29,12 +34,12 @@ html, body {
 
 /* 导航栏列表 */
 .home-list {
-    margin-top: 30px;
-    margin-right: 100px;
+    margin-top: 0.5vw; /* 使用vw作为边距单位 */
+    margin-right: 2vw; /* 使用vw作为边距单位 */
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    height: 50px;
+    height: 5vw; /* 使用vw作为高度单位 */
 }
 
 .home-list a {
@@ -49,22 +54,26 @@ html, body {
 
 /* 标题样式 */
 .subtitle {
-    margin-top: 30px;
-    margin-left: 100px;
-    font-size: 20px;
+    margin-top: 0.5vw; /* 使用vw作为边距单位 */
+    margin-left: 2vw; /* 使用vw作为边距单位 */
+    font-size: 2vw; /* 使用vw作为字体大小单位 */
 }
 
 .subtitle a:hover {
     color: #FFD306;
 }
 
+.subtitle a {
+    color: white;
+}
+
 /* 导航按钮样式 */
 .home-list button {
     background-color: transparent;
     border: none;
-    font-size: 24px;
+    font-size: 2vw; /* 使用vw作为字体大小单位 */
     font-family: Arial;
-    margin-left: 20px;
+    margin-left: 1vw; /* 使用vw作为边距单位 */
     color: white;
 }
 
@@ -77,37 +86,44 @@ html, body {
 
 /* 主内容容器 */
 .container-2 {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 2vw; /* 使用vw作为边距单位 */
+    margin-right: 2vw; /* 使用vw作为边距单位 */
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: row; /* 更改为列布局，以便控制 .me 和 .text 的顺序 */
+    align-items: center;
 }
 
 /* 个人信息样式 */
 .me {
-    float: left;
+    width: 100%; /* 使用vw作为宽度单位 */
+    max-width: 100%; /* 图片宽度最大不超过其父容器宽度 */
+    margin-bottom: 0.5vw; /* 使用vw作为边距单位 */
+    justify-content: center;
+    flex:1;
 }
 
 .me img {
     border-radius: 50%;
-    border: 4px solid #FF8EFF;
-    margin-bottom: 20px;
+    border: 0.4vw solid #FF8EFF; /* 使用vw作为边框宽度单位 */
+    word-wrap: break-word;
+    width: 70%; /* 将图片宽度设为80% */
+    height: 70%; /* 让高度根据宽度自动调整 */
 }
+
 
 /* “更多”按钮样式 */
 .more {
-    margin-top: 40px;
+    margin-top: 2vw; /* 使用vw作为边距单位 */
     background-color: purple;
     color: white;
-    height: 50px;
-    width: 100px;
-    font-size: 23px;
+    height: 4vw; /* 使用vw作为高度单位 */
+    width: 7vw; /* 使用vw作为宽度单位 */
+    font-size: 2vw; /* 使用vw作为字体大小单位 */
     text-align: center;
-    float: right;
-    border-radius: 10px;
+    border-radius: 1vw; /* 使用vw作为边框半径单位 */
     border: none;
     font-family: Stencil;
+    margin-bottom: 5vw;
 }
 
 .more a {
@@ -120,23 +136,25 @@ html, body {
 }
 
 .text {
-    margin-top: 0px;
+    margin-top: 0;
+    flex-wrap:wrap ;
+    flex: 2;
 }
 
 .text p {
-    font-size: 50px;
+    font-size: 3vw; /* 使用vw作为字体大小单位 */
     font-family: Stencil;
-    margin-bottom: 70px;
+    margin-bottom: 1vw; /* 使用vw作为边距单位 */
 }
 
 .text div i {
-    font-size: 70px;
+    font-size: 3vw; /* 使用vw作为字体大小单位 */
     font-family: Stencil;
 }
 
 .text div {
-    margin-top: 50px;
-    font-size: 24px;
+    margin-top: 3vw; /* 使用vw作为边距单位 */
+    font-size: 2vw; /* 使用vw作为字体大小单位 */
     font-family: Arial;
 }
 
@@ -144,12 +162,13 @@ html, body {
 .main-2 {
     background-color: azure;
     min-height: 100%;
+    width: 100%;
 }
 
 /* 关于我的容器 */
 .about-me {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 2vw; /* 使用vw作为边距单位 */
+    margin-right: 2vw; /* 使用vw作为边距单位 */
     min-height: 100%;
     display: flex;
     flex-direction: column;
@@ -159,7 +178,7 @@ html, body {
 .container-3 {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 5vw; /* 使用vw作为边距单位 */
     font-family: Stencil;
 }
 
@@ -167,7 +186,7 @@ html, body {
 .container-4,
 .container-5,
 .container-6 {
-    margin-top: 100px;
+    margin-top: 5vw; /* 使用vw作为边距单位 */
     display: flex;
     flex-direction: row;
     align-items: top;
@@ -176,22 +195,23 @@ html, body {
 .container-4 img,
 .container-5 img,
 .container-6 img {
-    margin-right: 50px;
+    margin-right: 2vw; /* 使用vw作为边距单位 */
+    width: 10vw; /* 使用vw作为宽度单位 */
 }
 
 .container-4 p,
 .container-5 p,
 .container-6 p {
     flex: 1;
-    font-size: 36px;
+    font-size: 3.6vw; /* 使用vw作为字体大小单位 */
     font-family: 標楷體;
-    margin-top: 10px;
+    margin-top: 1vw; /* 使用vw作为边距单位 */
     text-align: justify;
 }
 
 /* 技能容器 */
 .container-7 div {
-    font-size: 30px;
+    font-size: 3vw; /* 使用vw作为字体大小单位 */
     display: flex;
     flex-direction: row;
 }
@@ -210,8 +230,8 @@ html, body {
 
 /* 个人特质样式 */
 .about-me div {
-    margin-top: 80px;
-    font-size: 40px;
+    margin-top: 4vw; /* 使用vw作为边距单位 */
+    font-size: 4vw; /* 使用vw作为字体大小单位 */
 }
 
 /* 第八个容器 */
@@ -219,7 +239,7 @@ html, body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 100px;
+    margin-bottom: 10vw; /* 使用vw作为边距单位 */
 }
 
 .container-8 div {
@@ -230,6 +250,7 @@ html, body {
 
 .container-8 img {
     display: block;
+    width: 30vw; /* 使用vw作为宽度单位 */
 }
 
 .container-8-1,
@@ -237,18 +258,18 @@ html, body {
 .container-8-3 {
     display: flex;
     flex-direction: column;
-    font-size: 24px;
+    font-size: 2.4vw; /* 使用vw作为字体大小单位 */
     flex: 1;
-    margin-right: 30px;
+    margin-right: 2vw; /* 使用vw作为边距单位 */
 }
 
 .container-8-1 div,
 .container-8-2 div,
 .container-8-3 div {
-    margin-top: -5px;
+    margin-top: -0.5vw; /* 使用vw作为边距单位 */
     text-align: start;
     font-family: Calibri;
-    font-size: 30px;
+    font-size: 3vw; /* 使用vw作为字体大小单位 */
 }
 
 /* 最后一个容器 */
@@ -273,14 +294,14 @@ html, body {
     flex-direction: column;
     text-align: start;
     font-family: 'Times New Roman', Times, serif;
-    margin-bottom: 20px;
+    margin-bottom: 2vw; /* 使用vw作为边距单位 */
 }
 
 .container-9-2 button,
 .container-9-3 button {
     background-color: transparent;
     border: none;
-    font-size: 24px;
+    font-size: 2.5vw; /* 使用vw作为字体大小单位 */
     color: white;
     text-align: start;
     font-family: 'Times New Roman', Times, serif;
@@ -306,43 +327,16 @@ html, body {
 .container-9-4 button {
     background-color: transparent;
     border: none;
-    font-size: 30px;
+    font-size: 3vw; /* 使用vw作为字体大小单位 */
     color: white;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    min-height: 50px;
-    min-width: 150px;
+    margin-bottom: 2vw; /* 使用vw作为边距单位 */
+    margin-right: 2vw; /* 使用vw作为边距单位 */
+    min-height: 5vw; /* 使用vw作为最小高度单位 */
+    min-width: 15vw; /* 使用vw作为最小宽度单位 */
 }
 
 .container-9-4 button:hover {
     color: #FFD306;
-}
-
-/* 响应式设计 */
-@media screen and (max-width: 768px) {
-    .container-2 {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    
-    .main,
-    .home,
-    .container,
-    .subtitle,
-    .me,
-    .more,
-    .text,
-    .about-me,
-    .container-3,
-    .container-4,
-    .container-5,
-    .container-6,
-    .container-7,
-    .container-8,
-    .container-9 {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
 }
