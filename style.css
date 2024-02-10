@@ -379,10 +379,12 @@ html, body {
 
 @media screen and (max-width: 768px) {
     .container-5 img {
-        width: 10%; /* 将图像宽度设为父容器宽度的 10% */
-        height: 10%; /* 将图像高度设为父容器高度的 10% */
+        width: 50px; /* 设置图像宽度为固定值 */
+        height: auto; /* 根据宽度等比例调整高度 */
+        margin: 0 auto; /* 水平居中排列 */
     }
 }
+
 
 @media screen and (max-width: 768px) {
     .container-4,
