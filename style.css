@@ -377,13 +377,7 @@ html, body {
     text-align: justify;
 }
 
-@media screen and (max-width: 768px) {
-    .container-5 img {
-        width: 50px; /* 设置图像宽度为固定值 */
-        height: auto; /* 根据宽度等比例调整高度 */
-        margin: 0 auto; /* 水平居中排列 */
-    }
-}
+
 
 
 @media screen and (max-width: 768px) {
