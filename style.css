@@ -10,19 +10,19 @@
         font-family: Arial, Helvetica, sans-serif;
     }
     .more{
-        font-family: Stencil;
+        font-family:'Courier New', Courier, monospace
     }
     .text p{
-        font-family: Stencil;
+        font-family:'Courier New', Courier, monospace
     }
     .text div i{
-        font-family: Stencil;
+        font-family: 'Courier New', Courier, monospace
     }
     .text div{
         font-family: Arial;
     }
     .container-3{
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family:'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
     }
     .container-4,
     .container-5,
@@ -32,7 +32,7 @@
     .container-8-1,
     .container-8-2,
     .container-8-3 div{
-        font-family: Calibri;
+        font-family: 
     }
     .container-9-1,
     .container-9-2,
@@ -259,8 +259,9 @@ html, body {
 
     .me img {
         border: 0.2vw solid #FF8EFF; /* 减小边框宽度 */
-        width: 80%; /* 使用百分比作为宽度单位 */
-        height: auto; /* 根据宽度自动调整高度 */
+        max-width: 100%; /* 图片最大宽度为父容器的100% */
+        height: auto; /* 根据宽度等比例调整高度 */
+     
     }
 
     .me {
@@ -268,11 +269,6 @@ html, body {
         justify-content: center; /* 在父容器中水平居中 */
         align-items: center; /* 在父容器中垂直居中 */
         text-align: center; /* 文本水平居中 */
-    }
-
-    .me img {
-        max-width: 100%; /* 图片最大宽度为父容器的100% */
-        height: auto; /* 根据宽度等比例调整高度 */
     }
 
     /* “更多”按钮样式 */
