@@ -161,185 +161,93 @@ html, body {
     font-family: Arial;
 }
 
-@media screen (max:768px){
+/* 在小屏幕上的样式 */
+@media screen and (max-width: 768px) {
     /* 全局样式 */
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    font-size: 1vw; /* 使用vw作为基准字体大小 */
-}
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        font-size: 1vw; /* 使用vw作为基准字体大小 */
+    }
 
-/* 主要容器 */
-.main {
-    background-color: #E2C2DE;
-    width: 100%; /* 保证容器宽度占满整个视口 */
-    display: flex;
-    flex-direction: column;
-}
+    /* 主要容器 */
+    .main {
+        background-color: #E2C2DE;
+        width: 100%; /* 保证容器宽度占满整个视口 */
+        display: flex;
+        flex-direction: column;
+    }
 
-/* 主页样式 */
-.home {
-    min-height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
+    /* 导航栏容器 */
+    .container {
+        background-color: purple;
+        margin-bottom: 1vw; /* 使用vw作为边距单位 */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* 在小屏幕上居中导航栏 */
+    }
 
-/* 导航栏容器 */
-.container {
-    background-color: purple;
-    margin-bottom: 1vw; /* 使用vw作为边距单位 */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+    /* 导航栏列表 */
+    .home-list {
+      display: none;
+    }
 
-/* 导航栏列表 */
-.home-list {
-    margin-top: 0.5vw; /* 使用vw作为边距单位 */
-    margin-right: 2vw; /* 使用vw作为边距单位 */
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    height: 5vw; /* 使用vw作为高度单位 */
-}
+    .subtitle{
+        display:none;
+    }
 
-.home-list a {
-    color: white;
-    text-decoration: none;
-}
+    /* 主内容容器 */
+    .container-2 {
+        margin: 0; /* 移除左右边距 */
+        display: flex;
+        flex-direction: column; /* 在小屏幕上垂直排列内容 */
+        align-items: center; /* 在小屏幕上居中内容 */
+    }
 
-.home-list a:hover,
-.home-list button:hover {
-    color: #FFD306;
-}
+    .me img {
+        border: 0.2vw solid #FF8EFF; /* 减小边框宽度 */
+        width: 80%; /* 使用百分比作为宽度单位 */
+        height: auto; /* 根据宽度自动调整高度 */
+    }
 
-/* 标题样式 */
-.subtitle {
-    margin-top: 0.5vw; /* 使用vw作为边距单位 */
-    margin-left: 2vw; /* 使用vw作为边距单位 */
-    font-size: 2vw; /* 使用vw作为字体大小单位 */
-}
+    /* “更多”按钮样式 */
+    .more {
+        margin-top: 1vw; /* 使用vw作为边距单位 */
+        margin-bottom: 3vw; /* 使用vw作为边距单位 */
+        height: 3vw; /* 使用vw作为高度单位 */
+        width: 6vw; /* 使用vw作为宽度单位 */
+        font-size: 1.5vw; /* 使用vw作为字体大小单位 */
+        border-radius: 0.5vw; /* 使用vw作为边框半径单位 */
+    }
 
-.subtitle a:hover {
-    color: #FFD306;
-}
+    .more a {
+        color: white;
+        text-decoration: none;
+    }
 
+    .text button:hover {
+        background-color: #FF8EFF;
+    }
 
+    .text {
+        margin-top: 0;
+        flex-wrap: wrap;
+    }
 
-.subtitle a {
-    color: white;
-}
+    .text p {
+        font-size: 3vw; /* 使用vw作为字体大小单位 */
+    }
 
-/* 导航按钮样式 */
-.home-list button {
-    background-color: transparent;
-    border: none;
-    font-size: 2vw; /* 使用vw作为字体大小单位 */
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 1vw; /* 使用vw作为边距单位 */
-    color: white;
-}
+    .text div i {
+        font-size: 3vw; /* 使用vw作为字体大小单位 */
+    }
 
-/* 用于控制按钮顺序的类 */
-.button-1 { order: 1; }
-.button-2 { order: 2; }
-.button-3 { order: 3; }
-.button-4 { order: 4; }
-.button-5 { order: 5; }
-
-/* 主内容容器 */
-.container-2 {
-    margin-left: 2vw; 
-    margin-right: 2vw; 
-    display: flex;
-    flex-direction: column; 
-}
-
-/* 个人信息样式 */
-.me {
-    width: 100%; /* 使用vw作为宽度单位 */
-    max-width: 100%; /* 图片宽度最大不超过其父容器宽度 */
-    margin-bottom: 0.5vw; /* 使用vw作为边距单位 */
-    justify-content: center;
-    order:1;
-}
-
-.me img {
-    border-radius: 50%;
-    border: 0.4vw solid #FF8EFF; /* 使用vw作为边框宽度单位 */
-    word-wrap: break-word;
-    width:100%; /* 将图片宽度设为80% */
-    height:100%; /* 让高度根据宽度自动调整 */
-}
-
-/* “更多”按钮样式 */
-.more {
-    margin-top: 2vw; /* 使用vw作为边距单位 */
-    background-color: purple;
-    color: white;
-    height: 4vw; /* 使用vw作为高度单位 */
-    width: 7vw; /* 使用vw作为宽度单位 */
-    font-size: 2vw; /* 使用vw作为字体大小单位 */
-    text-align: center;
-    border-radius: 1vw; /* 使用vw作为边框半径单位 */
-    border: none;
-    font-family: Stencil;
-    margin-bottom: 5vw;
-}
-
-.more a {
-    color: white;
-    text-decoration: none;
-}
-
-.text button:hover {
-    background-color: #FF8EFF;
-}
-
-.text {
-    order:2;
-    margin-top: 0;
-    flex-wrap:wrap ;
-    flex: 2;
-}
-
-.text p {
-    font-size: 3vw; /* 使用vw作为字体大小单位 */
-    font-family: Stencil;
-    margin-bottom: 1vw; /* 使用vw作为边距单位 */
-}
-
-.text div i {
-    font-size: 3vw; /* 使用vw作为字体大小单位 */
-    font-family: Stencil;
-}
-
-.text div {
-    margin-top: 3vw; /* 使用vw作为边距单位 */
-    font-size: 2vw; /* 使用vw作为字体大小单位 */
-    font-family: Arial;
-}
-
-/* 第二个主要容器 */
-.main-2 {
-    background-color: azure;
-    min-height: 100%;
-    width: 100%;
-}
-
-/* 关于我的容器 */
-.about-me {
-    margin-left: 5vw; /* 使用vw作为边距单位 */
-    margin-right: 5vw; /* 使用vw作为边距单位 */
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-}}
-
-    
+    .text div {
+        margin-top: 3vw; /* 使用vw作为边距单位 */
+        font-size: 2vw; /* 使用vw作为字体大小单位 */
+    }
 }
 
 /* 第二个主要容器 */
