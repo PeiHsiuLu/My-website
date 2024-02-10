@@ -1,10 +1,5 @@
 /*字體類別*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@font-face {
-    font-family: 'MyCustomFont'; /* 自定义字体名称 */
-    src: url('path/to/font.woff2') format('woff2'), /* 字体文件路径和格式 */
-         url('path/to/font.woff') format('woff'); /* 支持不同格式的字体文件 */
-  }
 @media screen and (max-width: 768px) {
     .home-list button{ 
         font-family: Arial, Helvetica, sans-serif;
