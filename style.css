@@ -432,4 +432,25 @@ html, body {
     color:#FFD306;
 }
 
+/* 在較小的屏幕上，容器堆疊在一起，圖片寬度自動調整 */
+@media only screen and (max-width: 600px) {
+    .container-2 {
+        flex-direction: column;
+        margin-left: 20px; /* 為了更好的可讀性，添加左邊距 */
+        margin-right: 20px; /* 為了更好的可讀性，添加右邊距 */
+    }
+    .me img {
+        width: 100%; /* 圖片寬度佔滿容器寬度 */
+        height: auto; /* 保持圖片比例 */
+    }
+}
+
+/* 適用於所有手機屏幕 */
+@media only screen and (max-device-width: 480px) {
+    .container-2 {
+        margin-left: 10px; /* 更小的螢幕上進一步減少左邊距 */
+        margin-right: 10px; /* 更小的螢幕上進一步減少右邊距 */
+    }
+}
+
 
