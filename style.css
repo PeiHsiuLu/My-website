@@ -134,7 +134,34 @@ html, body {
     text-decoration: none;
 }
 
-@media screen (max-width:768px){
+.text button:hover {
+    background-color: #FF8EFF;
+}
+
+.text {
+    margin-top: 0;
+    flex-wrap:wrap ;
+    flex: 2;
+}
+
+.text p {
+    font-size: 3vw; /* 使用vw作为字体大小单位 */
+    font-family: Stencil;
+    margin-bottom: 1vw; /* 使用vw作为边距单位 */
+}
+
+.text div i {
+    font-size: 3vw; /* 使用vw作为字体大小单位 */
+    font-family: Stencil;
+}
+
+.text div {
+    margin-top: 3vw; /* 使用vw作为边距单位 */
+    font-size: 2vw; /* 使用vw作为字体大小单位 */
+    font-family: Arial;
+}
+
+@media screen (max:768px){
     /* 全局样式 */
 html, body {
     margin: 0;
@@ -202,7 +229,6 @@ html, body {
 
 
 
-
 .subtitle a {
     color: white;
 }
@@ -248,7 +274,6 @@ html, body {
     width:100%; /* 将图片宽度设为80% */
     height:100%; /* 让高度根据宽度自动调整 */
 }
-
 
 /* “更多”按钮样式 */
 .more {
@@ -314,6 +339,25 @@ html, body {
     flex-direction: column;
 }}
 
+    
+}
+
+/* 第二个主要容器 */
+.main-2 {
+    background-color: azure;
+    min-height: 100%;
+    width: 100%;
+}
+
+/* 关于我的容器 */
+.about-me {
+    margin-left: 5vw; /* 使用vw作为边距单位 */
+    margin-right: 5vw; /* 使用vw作为边距单位 */
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+    
 /* 关于我的标题 */
 .container-3 {
     display: flex;
