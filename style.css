@@ -357,10 +357,14 @@ html, body {
 }
 
 .container-4 img,
-.container-5 img,
 .container-6 img{
     width:50%;
     height:50%
+}
+
+.container-5 img{
+    width:30%;
+    height:30%
 }
 
 .container-4 p,
