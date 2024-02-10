@@ -446,6 +446,12 @@ html, body {
     flex: 1;
 }
 
+@media screen and (max-width: 768px) {
+    .container-7 div {
+        font-size: 1vw; /* 在小屏幕上将字体大小设置为1vw */
+    }
+}
+
 /* 个人特质样式 */
 .about-me div {
     margin-top: 4vw; /* 使用vw作为边距单位 */
