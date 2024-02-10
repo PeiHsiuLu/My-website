@@ -238,15 +238,15 @@ html, body {
     max-width: 100%; /* 图片宽度最大不超过其父容器宽度 */
     margin-bottom: 0.5vw; /* 使用vw作为边距单位 */
     justify-content: center;
-    flex:1;
+    order:1;
 }
 
 .me img {
     border-radius: 50%;
     border: 0.4vw solid #FF8EFF; /* 使用vw作为边框宽度单位 */
     word-wrap: break-word;
-    width: 70%; /* 将图片宽度设为80% */
-    height: 70%; /* 让高度根据宽度自动调整 */
+    width:100%; /* 将图片宽度设为80% */
+    height:100%; /* 让高度根据宽度自动调整 */
 }
 
 
@@ -270,14 +270,12 @@ html, body {
     text-decoration: none;
 }
 
-
-}
-
 .text button:hover {
     background-color: #FF8EFF;
 }
 
 .text {
+    order:2;
     margin-top: 0;
     flex-wrap:wrap ;
     flex: 2;
