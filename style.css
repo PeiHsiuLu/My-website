@@ -264,6 +264,14 @@ html, body {
     text-align: justify;
 }
 
+.container-5 img{
+    order:1;
+}
+
+.container-5 p{
+    order:2;
+}
+
 }
 
 
