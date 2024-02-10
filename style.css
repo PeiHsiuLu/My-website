@@ -378,6 +378,13 @@ html, body {
 }
 
 @media screen and (max-width: 768px) {
+    .container-5 img {
+        width: 10%; /* 将图像宽度设为父容器宽度的 10% */
+        height: 10%; /* 将图像高度设为父容器高度的 10% */
+    }
+}
+
+@media screen and (max-width: 768px) {
     .container-4,
     .container-5,
     .container-6 {
@@ -393,11 +400,6 @@ html, body {
         width: 50%;
         height: 50%;
         margin: auto; /* 水平居中对齐图像 */
-    }
-
-    .container-5 img{
-        width: 10%;
-        height: 10%;
     }
 
     .container-4 p,
