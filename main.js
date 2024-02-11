@@ -37,7 +37,7 @@ window.onclick = function(event) {
           }
         }
     
-  }
+    }
 
 
 /* When the user clicks on the button, 
