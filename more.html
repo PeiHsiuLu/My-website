@@ -1,47 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            text-align: center;
-        }
-        .not-found {
-            font-size: 6vw;
-            margin-bottom: 2vw;
-        }
-        .renewing {
-            position: fixed;
-            bottom: 0;
-            right: 0;
-            font-size: 3vw;
-            margin: 2vw;
-        }
-        @media screen and (min-width: 768px) {
-            .not-found {
-                font-size: 72px;
-            }
-            .renewing {
-                font-size: 36px;
-            }
-        }
-    </style>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="refresh" content="10">
+    <meta name="author" content="呂沛修 Pei-Hsiu Lu">
+    <meta name="description" content="Hello! This is Pei-Hsiu Lu. Your Best Partner! Now Major in NTNU Technology and Human Resources.">
+    <meta name="keywords" content="呂沛修, Pei-Hsiu Lu, Partner, NTNU, Technology and Human Resources, TAHRD, personal web, Hsinchu">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>More about me</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="main.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Wait...Still fixed...</h1>
-        <div class="not-found"><strong>404 Not Found</strong></div>
+    <div class="main">
+        <div class="home">
+            <div class="container">
+    
+                <div class="subtitle"><strong>LU&nbsp;&nbsp;WEB</strong></div>
+                <div class="home-list">
+                    <button class="button-1" onclick="home()"><a href="index.html">Home</a></button>
+                    <button id="aboutMeButton" class="button-2" onclick="scrollToAboutMe()">About me</button>
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="button-3">Portfolio</button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="Programming-Portfolio.html">Programming</a>
+                          <a href="SDGS-Portfolio.html">SDGs </a>
+                          <a href="Course-related-Portfolio.html">Course-related</a>
+                        </div>
+                    </div>
+                    <div class="dropdown-2">
+                        <button class="button-4" onclick="myFunction2()">Experience</button>
+                        <div id="myDropdown-2" class="dropdown-content-2">
+                          <a href="Camps-Experience.html">Camps</a>
+                          <a href="Team-Editor.html">Team's Editor</a>
+                          <a href="Competition.html">Competition</a>
+                          <a href="My-Team.html">My Team</a>
+                        </div>
+                    </div>
+                    <button class="button-5" onclick="More()"><a href="more.html">More</a></button>
+                </div>
+    
+            </div>
+            <div class="container-2">
+                <div class="me"><img src="https://github.com/PeiHsiuLu/PeiHsiuLu/blob/main/77410.jpg?raw=true" width="450px" height="500px"></div>
+                <div class="text">
+                    <p><strong>Hello!</strong> &nbsp;
+                    <p><strong>This is Pei-Hsiu Lu.</strong></p>
+                    <div><strong><i>Your Best Partner!</i></strong></div>
+                    <div> Now Major in NTNU Technology and Human Resources.</div>
+                    <button class="more" onclick="more()"><a href="more.html">More</a></button>
+                </div>
+            </div>
+    
+        </div>
     </div>
-    <div class="renewing">Renewing...</div>
+    <p>Continue Renewing...</p>
 </body>
 </html>

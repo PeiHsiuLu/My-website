@@ -18,12 +18,27 @@
     <div class="home">
         <div class="container">
 
-            <div class="subtitle"><strong><i><a href="index.html">Pei-Hsiu Lu</a></i></strong></div>
+            <div class="subtitle"><strong>LU&nbsp;&nbsp;WEB</strong></div>
             <div class="home-list">
                 <button class="button-1" onclick="home()"><a href="index.html">Home</a></button>
                 <button id="aboutMeButton" class="button-2" onclick="scrollToAboutMe()">About me</button>
-                <button class="button-3" onclick="showMenuForPortfolio()">Portfolio</button>
-                <button class="button-4" onclick="showMenuForExperience()">Experience</button>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="button-3">Portfolio</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="Programming-Portfolio.html">Programming</a>
+                      <a href="SDGS-Portfolio.html">SDGs </a>
+                      <a href="Course-related-Portfolio.html">Course-related</a>
+                    </div>
+                </div>
+                <div class="dropdown-2">
+                    <button class="button-4" onclick="myFunction2()">Experience</button>
+                    <div id="myDropdown-2" class="dropdown-content-2">
+                      <a href="Camps-Experience.html">Camps</a>
+                      <a href="Team-Editor.html">Team's Editor</a>
+                      <a href="Competition.html">Competition</a>
+                      <a href="My-Team.html">My Team</a>
+                    </div>
+                </div>
                 <button class="button-5" onclick="More()"><a href="more.html">More</a></button>
             </div>
 
@@ -128,6 +143,7 @@
     <div class="container-9-3">
         <h2>Social</h2>
         <button onclick="Github()"><a href="https://github.com/PeiHsiuLu">Github</a></button>
+        <button onclick="Leetcode()"><a href="https://leetcode.com/paul234jj/">Leetcode</a></button>
     </div>
     <div class="container-9-4">
         <button id="home" class="button-1" onclick="scrollToHome()"> 🏠Back to Home</button>

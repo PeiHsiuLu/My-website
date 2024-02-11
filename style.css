@@ -75,6 +75,7 @@ html, body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 /* 导航栏列表 */
@@ -84,6 +85,7 @@ html, body {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    align-items: center; /* 垂直居中对齐 */
     height: 5vw; /* 使用vw作为高度单位 */
 }
 
@@ -99,21 +101,13 @@ html, body {
 
 /* 标题样式 */
 .subtitle {
-    margin-top: 0.5vw; /* 使用vw作为边距单位 */
     margin-left: 2vw; /* 使用vw作为边距单位 */
-    font-size: 2vw; /* 使用vw作为字体大小单位 */
-}
-
-.subtitle a:hover {
-    color: #FFD306;
-}
-
-
-
-
-.subtitle a {
+    font-size: 2.5vw; /* 使用vw作为字体大小单位 */
     color: white;
+    font-family:STSong ;
 }
+
+
 
 /* 导航按钮样式 */
 .home-list button {
@@ -125,12 +119,85 @@ html, body {
     color: white;
 }
 
+
+
+
+
+
 /* 用于控制按钮顺序的类 */
-.button-1 { order: 1; }
-.button-2 { order: 2; }
-.button-3 { order: 3; }
-.button-4 { order: 4; }
-.button-5 { order: 5; }
+.button-3 { 
+   }
+
+.button-1{order: 1;}
+.button-2{order: 2;}
+.button-4{order: 4;}
+.button-5{order: 5;}
+
+  
+.dropdown {
+    order: 3;
+}
+  
+.dropdown-content {
+
+    text-align: start;
+    font-size:auto;
+    display: none;
+    width: 160px;
+    position: absolute;
+    background-color:	#FFF7FF;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+.dropdown-content a:hover{
+    color:black;
+  }
+  
+.dropdown a:hover {background-color: #ddd;}
+
+.dropdown-2 {
+    order: 3;
+}
+  
+.dropdown-content-2 {
+    text-align: start;
+    font-size:auto;
+    display: none;
+    width: 190px;
+    position: absolute;
+    background-color:	#FFF7FF;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  
+  .dropdown-content-2 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content-2 a:hover{
+    color:black;
+  }
+  
+  .dropdown-2 a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+
+  .show-2 {display: block;}
 
 /* 主内容容器 */
 .container-2 {
@@ -677,3 +744,4 @@ html, body {
         display: none;
     }
 }
+
