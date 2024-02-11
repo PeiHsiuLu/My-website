@@ -94,10 +94,14 @@ html, body {
     text-decoration: none;
 }
 
-.home-list a:hover,
-.home-list button:hover {
-    color: #FFD306;
+
+.home-list button:hover{
+    color:#FFD306;
 }
+.home-list a:hover{
+    color:#FFD306;
+}
+
 
 /* 标题样式 */
 .subtitle {
@@ -640,9 +644,7 @@ html, body {
     font-family: 'Times New Roman', Times, serif;
 }
 
-.container-9-4 button:hover {
-    color: #FFD306;
-}
+
 
 @media  screen and (max-width:768px){
 
