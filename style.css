@@ -672,3 +672,8 @@ html, body {
     height: 150px; /* Reduce height */
 }
 
+@media screen and (max-width: 768px) {
+    .about-me .container-3 {
+        display: none;
+    }
+}
