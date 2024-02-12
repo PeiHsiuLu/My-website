@@ -289,7 +289,7 @@ html, body {
         width: 100%;
         font-size: 1vw; /* 使用vw作为基准字体大小 */
     }
-    
+
 
     /* 主要容器 */
     .main {
@@ -310,7 +310,9 @@ html, body {
         align-items: center; /* 在小屏幕上居中导航栏 */
     }
 
-
+    .home-list button{
+        font-size: auto;
+    }
 
     /* 主内容容器 */
     .container-2 {
