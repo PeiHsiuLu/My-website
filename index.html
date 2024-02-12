@@ -10,6 +10,9 @@
     <title>Pei-Hsiu Lu's Web</title>
     <link rel="stylesheet" href="style.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="main.js"></script>
 </head>
 <body>
@@ -18,12 +21,12 @@
     <div class="home">
         <div class="container">
 
-            <div class="subtitle"><strong>LU&nbsp;&nbsp;WEB</strong></div>
+            <div class="subtitle" ><strong>LU&nbsp;&nbsp;WEB</strong></div>
             <div class="home-list">
-                <button class="button-1" onclick="home()"><a href="index.html">Home</a></button>
-                <button id="aboutMeButton" class="button-2" onclick="scrollToAboutMe()">About me</button>
+                <button class="button-1 " onclick="home()"><a href="index.html" ><i class="fa fa-fw fa-home"></i>Home&nbsp;&nbsp;</a></button>
+                <button id="aboutMeButton" class="button-2" onclick="scrollToAboutMe()"><i class="fa fa-fw fa-user"></i>About me&nbsp;&nbsp;</button>
                 <div class="dropdown">
-                    <button onclick="myFunction()" class="button-3">Portfolio</button>
+                    <button onclick="myFunction()" class="button-3"><i class="fa fa-fw fa-file"></i>Portfolio&nbsp;&nbsp;</button>
                     <div id="myDropdown" class="dropdown-content">
                       <a href="Programming-Portfolio.html">Programming</a>
                       <a href="SDGS-Portfolio.html">SDGs </a>
@@ -31,7 +34,7 @@
                     </div>
                 </div>
                 <div class="dropdown-2">
-                    <button class="button-4" onclick="myFunction2()">Experience</button>
+                    <button class="button-4" onclick="myFunction2()"><i class="fa fa-fw fa-heart"></i>Experience&nbsp;&nbsp;</button>
                     <div id="myDropdown-2" class="dropdown-content-2">
                       <a href="Camps-Experience.html">Camps</a>
                       <a href="Team-Editor.html">Team's Editor</a>
@@ -39,7 +42,8 @@
                       <a href="My-Team.html">My Team</a>
                     </div>
                 </div>
-                <button class="button-5" onclick="More()"><a href="more.html">More</a></button>
+                <button class="button-5" onclick="Phone()"><a href="more.html"><i class="fa fa-fw fa-phone"></i>Phone&nbsp;&nbsp;</a></button>
+                <button class="button-6" onclick="More()"><a href="more.html"><i class="fa fa-fw fa-search"></i>More&nbsp;&nbsp;</a></button>
             </div>
 
         </div>
@@ -58,8 +62,8 @@
 </div>
 
 <div class="main-2">
-    <div class="about-me" style="margin-left:20vw; /* 使用vw作为边距单位 */
-    margin-right: 20vw; /* 使用vw作为边距单位 */">
+    <div class="about-me" style="margin-left:15vw; /* 使用vw作为边距单位 */
+    margin-right: 15vw; /* 使用vw作为边距单位 */">
         <div class="container-3" style="font-size: 70px;"><strong>About me</strong> </div>
         <div style="font-size: 3vw;"><strong>Biology</strong></div>
         <div class="container-4">
@@ -78,19 +82,130 @@
         <div><strong>Skills and Abilities</strong></div>
         <div class="container-7" style="margin-top: -10px;">
             <div>
-                <div class="ability-1">🖥️&nbsp;&nbsp;<strong><i>Computer science</i></strong></div>
-                <div class="ability-2">📒&nbsp;&nbsp;<strong><i>Management and Finance</i></strong></div>
-                <div class="ability-3">🔌&nbsp;&nbsp;<strong><i>Technological Application</i></strong></div>
+                <div class="ability-1">
+                    <strong><i>🖥️&nbsp;&nbsp;Computer science</i></strong>
+                    <ol type="A">
+                        <li>Frontend Programming Skills
+                            <ul>
+                                <li>Programming Languages
+                                    <ul>
+                                        <li>HTML: Proficient</li>
+                                        <li>CSS: Proficient</li>
+                                        <li>Javascript: Familiar with</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li style="margin-bottom: 10px;">React</li>
+                            </ul>
+                        </li>
+                        <li>Backend Programming Languages
+                            <ul>
+                                <li>SQL:Familiar with</li>
+                                <li style="margin-bottom: 10px;">Node.js: Familiar with</li>
+                            </ul>
+                        </li>
+                        <li>Azure Infrastructure Setup</li>
+                    </ol>
+                </div>
+                <div class="ability-2"><strong><i>📒&nbsp;&nbsp;Management and Finance</i></strong>
+                    <ul>
+                        <li>Project Planning</li>
+                        <li>Human Resourses Management</li>
+                        <li>Human Behavior in Organization</li>
+                        <li>Basic Finance&Management Knowledge
+                            <ul>
+                                <li>Economics</li>
+                                <li>Accounting</li>
+                                <li>Statistics</li>
+                                <li>Management</li>
+                            </ul>
+                        </li>
+                    </ul>
+                
+                </div>
             </div>
             <div>
-                <div class="ability-4">📊&nbsp;&nbsp;<strong><i>Stastical Analysis</i></strong></div>
-                <div class="ability-5">👤&nbsp;&nbsp;<strong><i>Humanities and Social Sciences</i></strong></div>
-                <div class="ability-6">📖&nbsp;&nbsp;<strong><i>Language</i></strong></div>
+                <div class="ability-3"><strong><i>🔌&nbsp;&nbsp;Technological Application</i></strong>
+                    <ul>
+                        <li>Computer Image Processing Skills
+                            <ul>
+                                <li>Adobe Photoshop</li>
+                                <li style="margin-bottom: 10px;">Adobe Illustrator</li>
+                            </ul>
+                        </li>
+                        <li>Laser Work</li>
+                        <li>Woodworking</li>
+                        <li>Arduino</li>
+                        <li>MIT App Inventor</li>
+
+                    </ul>
+                
+                </div>
+                <div class="ability-4"><strong><i>📊&nbsp;&nbsp;Stastical Analysis</i></strong>
+                    <ul>
+                        <li>Analysis Tools
+                            <ul>
+                                <li>SPSS:Familiar with</li>
+                                <li style="margin-bottom: 10px;">Excel VBA:Intermediate proficiency</li>
+                            </ul>
+                        </li>
+                        <li>Statistics</li>
+                     </ul>
+                </div>
             </div>
             <div>
-                <div class="ability-7">📐&nbsp;&nbsp;<strong><i>Math and Logical</i></strong></div>
-                <div class="ability-8">📋&nbsp;&nbsp;<strong><i>Word Processing</i></strong></div>
-                <div class="ability-9">💼&nbsp;&nbsp;<strong><i>Marketing</i></strong></div>
+                <div class="ability-6"><strong><i>📖&nbsp;&nbsp;Language</i></strong>
+                    <ul>
+                        <li>Chinese:proficiency</li>
+                    <li>English
+                        <ul>
+                            <li>Listening:Intermediate proficiency </li>
+                            <li>Speaking:Intermediate proficiency</li>
+                            <li>Reading:Intermediate proficiency</li>
+                            <li style="margin-bottom: 10px;">Writing:Intermediate proficiency</li>
+                        </ul>
+                    </li>
+                    <li>Japanese:Familiar with</li>
+                    <li>Malaysian Language:Familiar with</li>
+                    </ul>
+                    
+                </div>
+                <div class="ability-7"><strong><i>📐&nbsp;&nbsp;Math and Logical</i></strong>
+                    <ul>
+                        <li>computer science fundamentals</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                
+                <div class="ability-8"><strong><i>📋&nbsp;&nbsp;Word Processing</i></strong>
+                <ul>
+                    <li>Microsoft Office Tools
+                        <ul>
+                            <li>Word</li>
+                            <li>Power Point</li>
+                            <li style="margin-bottom: 10px;">Excel</li>
+                        </ul> 
+                    </li>
+                    <li>Canva</li>
+                    <li>Google Tools
+                        <ul>
+                            <li>Google Document</li>
+                            <li>Google Forms</li>
+                            <li>Google Brief</li>
+                        </ul>
+                    </li>
+                </ul>
+               </div>
+               <div class="ability-9"><strong><i>✏️&nbsp;&nbsp;Editor</i></strong>
+                <ul>
+                    <li>Copywriting</li>
+                    <li>Graphic Design</li>
+                </ul>
+              
+            </div>
+                
             </div>
         </div>
         <div style="font-size: 3vw;"><strong>Personal Characteristics</strong></div>
@@ -133,20 +248,8 @@
 </div>
 <div class="container-9">
     <div class="container-9-1"> ©&nbsp;2024 Design and Built By Pei-Hsiu,Lu</div>
-    <div class="container-9-2">
-        <h2>Contact me</h2>
-        <button onclick="Phone()">Phone: 0900-769017</button>
-        <button onclick="Linkedin()">Mail: Paul234jj@930717</button>
-        <button onclick="Portfolio()"><a href="https://www.linkedin.com/in/%E6%B2%9B%E4%BF%AE-%E5%91%82-682b752b2/">Linkedin: 呂沛修</a></button>
-        <button onclick="Line()">LINE: paul930717</button>
-    </div>
-    <div class="container-9-3">
-        <h2>Social</h2>
-        <button onclick="Github()"><a href="https://github.com/PeiHsiuLu">Github</a></button>
-        <button onclick="Leetcode()"><a href="https://leetcode.com/paul234jj/">Leetcode</a></button>
-    </div>
     <div class="container-9-4">
-        <button id="home" class="button-1" onclick="scrollToHome()"> 🏠Back to Home</button>
+        <button id="home" class="button-1" onclick="scrollToHome()">🏠Back to Home</button>
     </div>
 </div>
 
