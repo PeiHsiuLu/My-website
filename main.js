@@ -8,6 +8,16 @@ function scrollToAboutMe() {
     aboutMeDiv.scrollIntoView({ behavior: 'smooth' });
 }
 
+function scrollToskill() {
+    var skill = document.querySelector('.skill');
+    skill.scrollIntoView({ behavior: 'smooth' });
+}
+
+function scrollTocharacteristics() {
+    var characteristics = document.querySelector('.characteristics');
+    characteristics.scrollIntoView({ behavior: 'smooth' });
+}
+
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function myFunction() {
